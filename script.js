@@ -45,12 +45,12 @@ function portaXNOR(entrada1, entrada2){
 
 /*************************************************************************************************/
 /* MULTIPLEXADOR DE 2 ENTRADAS */
-function duasEntMUX(entrada0, entrada1, controle){
+export function duasEntMUX(entrada0, entrada1, controle){ 
     return (entrada0 && !controle) || (entrada1 && controle); 
 };
 
 /* MULTIPLEXADOR DE 4 ENTRADAS */
-function quatroEntMUX(ent0, ent1, ent2, ent3, cont1, cont0){
+export function quatroEntMUX(ent0, ent1, ent2, ent3, cont1, cont0){
     and0 = ent0 && !cont0 && !cont1;
     and1 = ent1 && cont0 && !cont1;
     and2 = ent2 && !cont0 && cont1;
@@ -62,7 +62,7 @@ function quatroEntMUX(ent0, ent1, ent2, ent3, cont1, cont0){
 };
 
 /* MULTIPLEXADOR DE 8 ENTRADAS */
-function oitoEntMUX(ent0, ent1, ent2, ent3, ent4, ent5, ent6, ent7, cont2, cont1, cont0, enable){
+export function oitoEntMUX(ent0, ent1, ent2, ent3, ent4, ent5, ent6, ent7, cont2, cont1, cont0, enable){
     cont2 = !cont2;
     cont1 = !cont1;
     cont0 = !cont0;
