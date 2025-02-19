@@ -1,0 +1,17 @@
+.container {
+    background-color: blue;
+    height: 80vh;
+    color: white;
+}
+
+.dois-dig {
+    background-color: brown;
+}
+
+.quatro-dig {
+    background-color: darkorange;
+}
+
+.oito-dig {
+    background-color:chartreuse
+}
