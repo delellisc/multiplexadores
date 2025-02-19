@@ -42,3 +42,11 @@ function portaXNOR(entrada1, entrada2){
     // ou:
     // return portaNOT(portaOR(portaAND(entrada1, portaNOT(entrada2)), portaAND(portaNOT(entrada1), entrada2)));
 }
+
+/*************************************************************************************************/
+/* MULTIPLEXADOR DE 2 ENTRADS */
+function duasEntMUX(entrada0, entrada1, controle){
+    return (entrada0 && !controle) || (entrada1 && controle); 
+}
+
+console.log(duasEntMUX(false, true, true));
