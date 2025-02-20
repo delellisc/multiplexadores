@@ -70,7 +70,7 @@ function oitoMult(){
     let oc0 = document.getElementById("o-c0").value
     let oen = document.getElementById("o-en").value
     console.log(oe0, oe1, oe2, oe3, oe4, oe5, oe6, oe7, oc2, oc1, oc0, oen);
-    return console.log(quatroEntMUX(
+    return console.log(oitoEntMUX(
         conversorBool(oe0),
         conversorBool(oe1),
         conversorBool(oe2),
