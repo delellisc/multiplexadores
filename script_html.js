@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // executar MUX de duas entradas
 document.addEventListener("DOMContentLoaded", () => {
-    document.querySelector(".dois-dig button").addEventListener("click", duasMult);
+    document.querySelector(".dois-dig").addEventListener("click", duasMult);
 });
 
 function duasMult(){
