@@ -1,11 +1,22 @@
 .container {
-    background-color: blue;
-    height: 80vh;
-    color: white;
+    background: lightblue;
+    position: relative;
+    overflow: hidden;
+    width: 95%;
+    height: 100%;
+    padding: 2vh 2vh 2vh 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
+.container p {
+    color: black;
+}
 .dois-dig {
     background-color: brown;
+
 }
 
 .quatro-dig {
