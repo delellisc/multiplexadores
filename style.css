@@ -9,6 +9,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 20px;
 }
 
 .container p {
@@ -16,15 +17,22 @@
 }
 .dois-dig {
     background-color: brown;
-
+}
+.dois-dig p {
+    text-align: center;
 }
 
 .quatro-dig {
     background-color: darkorange;
 }
-
+.quatro-dig p {
+    text-align: center;
+}
 .oito-dig {
     background-color:chartreuse
+}
+.oito-dig p {
+    text-align: center;
 }
 
 /* botões  */
