@@ -1,4 +1,4 @@
-import { duasEntMUX, quatroEntMUX, oitoEntMUX } from "./script.js";
+/* import { duasEntMUX, quatroEntMUX, oitoEntMUX } from "./script.js";
 
 // validação dos inputs
 document.addEventListener("DOMContentLoaded", () => {
@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         input.addEventListener('input', (event) => {
             validacao(event.target);
         });
+        input.value = 0;
     });
 });
 
@@ -95,4 +96,90 @@ function validacao(input) {
 //função para converter os valores numericos em boolean
 function conversorBool(value) {
     return value === 1 || value === "1";
+} */
+
+
+/* // função para mudar o estilo dos elementos caso estejam em nível lógico alto
+function acenderElementosOR(id) {
+    const group = document.getElementById(id);
+    const elements = group.querySelectorAll("line, circle");
+
+    elements.forEach(el => {
+        if (el.classList.contains("nivelLogicoBaixo")){
+            el.classList.remove("nivelLogicoBaixo");
+            el.classList.add("nivelLogicoAlto");
+        }
+        else {
+            el.classList.remove("nivelLogicoAlto");
+            el.classList.add("nivelLogicoBaixo");
+        }
+    });
+
+    const groupOutput = document.getElementById("ors0");
+    const elementsOutput = groupOutput.querySelectorAll("line, circle");
+
+    const ore0 = document.querySelector("#ore0 line");
+    const ore1 = document.querySelector("#ore1 line");
+
+    elementsOutput.forEach(el => {
+        if (ore0.classList.contains("nivelLogicoAlto") || ore1.classList.contains("nivelLogicoAlto")){
+            el.classList.remove("nivelLogicoBaixo");
+            el.classList.add("nivelLogicoAlto");
+        }
+        else {
+            el.classList.remove("nivelLogicoAlto");
+            el.classList.add("nivelLogicoBaixo");
+        }
+    });
 }
+
+document.getElementById('ore0').addEventListener("click", function () {
+    acenderElementosOR(this.id);
+});
+
+document.getElementById('ore1').addEventListener("click", function () {
+    acenderElementosOR(this.id);
+}); */
+
+
+// função para mudar o estilo dos elementos caso estejam em nível lógico alto
+function acenderElementosAND(id) {
+    const group = document.getElementById(id);
+    const elements = group.querySelectorAll("line, circle");
+
+    elements.forEach(el => {
+        if (el.classList.contains("nivelLogicoBaixo")){
+            el.classList.remove("nivelLogicoBaixo");
+            el.classList.add("nivelLogicoAlto");
+        }
+        else {
+            el.classList.remove("nivelLogicoAlto");
+            el.classList.add("nivelLogicoBaixo");
+        }
+    });
+
+    const groupOutput = document.getElementById("ands0");
+    const elementsOutput = groupOutput.querySelectorAll("line, circle");
+
+    const ande0 = document.querySelector("#ande0 line");
+    const ande1 = document.querySelector("#ande1 line");
+
+    elementsOutput.forEach(el => {
+        if (ande0.classList.contains("nivelLogicoAlto") && ande1.classList.contains("nivelLogicoAlto")){
+            el.classList.remove("nivelLogicoBaixo");
+            el.classList.add("nivelLogicoAlto");
+        }
+        else {
+            el.classList.remove("nivelLogicoAlto");
+            el.classList.add("nivelLogicoBaixo");
+        }
+    });
+}
+
+document.getElementById('ande0').addEventListener("click", function () {
+    acenderElementosAND(this.id);
+});
+
+document.getElementById('ande1').addEventListener("click", function () {
+    acenderElementosAND(this.id);
+});

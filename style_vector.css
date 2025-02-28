@@ -1,0 +1,36 @@
+.svg {
+    background-color: black;
+}
+/* 
+body { 
+    font-family: Arial, sans-serif; 
+    text-align: center; 
+    margin: 50px;
+    background-color: #224745;
+}
+
+#titulo1, #titulo2 {
+    color: #E8E9EA;
+}
+
+button { 
+    padding: 10px 20px; 
+    margin: 10px; 
+    font-size: 16px; 
+    cursor: pointer;
+} */
+
+.nivelLogicoBaixo {
+    cursor: pointer;
+    stroke: #31615F;
+    fill: #31615F;
+    transition: stroke 0.5s ease-in-out, fill 0.5s ease-in-out;
+}
+
+.nivelLogicoAlto {
+    cursor: pointer;
+    stroke: #3BE799;
+    fill: #3BE799;
+    filter: drop-shadow(0 0 5px #3BE799) drop-shadow(0 0 25px #3BE799);
+}
+

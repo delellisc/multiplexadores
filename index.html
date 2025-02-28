@@ -1,15 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multiplexadores</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style_vector.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./script_html.js" type="module"></script>
 </head>
+
 <body>
-    <div class="container">
+    <div>
+        <!-- PORTA AND -->
+        <svg width="200" height="100" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+            <g id="ande0">
+                <circle cx="10" cy="30" r="3" fill="#31615F" class="nivelLogicoBaixo"/>
+                <line x1="10" y1="30" x2="50" y2="30" stroke="#31615F" stroke-width="2" class="nivelLogicoBaixo"/>
+            </g>
+        
+            <g id="ande1">
+                <circle cx="10" cy="70" r="3" fill="#31615F" class="nivelLogicoBaixo"/>
+                <line x1="10" y1="70" x2="50" y2="70" stroke="#31615F" stroke-width="2" class="nivelLogicoBaixo"/>
+            </g>
+        
+            <g id="ands0">
+                <circle cx="140" cy="50" r="3" fill="#31615F" class="nivelLogicoBaixo"/>
+                <line x1="105" y1="50" x2="140" y2="50" stroke="#31615F" stroke-width="2" class="nivelLogicoBaixo"/>
+            </g>  
+        
+            <path id="and" d="
+                M 50,20 
+                L 75,20
+                A 30,30 0 0,1 75,80
+                L 50,80
+                Z" 
+                fill="none" stroke="black" stroke-width="2"/>                    
+        </svg>         
+
+        <!-- PORTA OR -->
+        <!-- <svg width="200" height="100" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+            <g id="ore0">
+                <circle cx="10" cy="30" r="3" fill="#31615F" class="nivelLogicoBaixo" />
+                <line x1="10" y1="30" x2="50" y2="30" stroke="#31615F" stroke-width="2" class="nivelLogicoBaixo" />
+            </g>
+
+            <g id="ore1">
+                <circle cx="10" cy="70" r="3" fill="#31615F" class="nivelLogicoBaixo" />
+                <line x1="10" y1="70" x2="50" y2="70" stroke="#31615F" stroke-width="2" class="nivelLogicoBaixo" />
+            </g>
+
+            <g id="ors0">
+                <circle cx="140" cy="50" r="3" fill="#31615F" class="nivelLogicoBaixo" />
+                <line x1="105" y1="50" x2="140" y2="50" stroke="#31615F" stroke-width="2" class="nivelLogicoBaixo" />
+            </g>
+
+            <path id="or" d="
+                M 50,20 
+                L 75,20
+                A 30,30 0 0,1 75,80
+                L 50,80
+                Z" fill="none" stroke="black" stroke-width="2" />
+        </svg>   -->   
+        <!-- <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://web.resource.org/cc/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" id="svg2" sodipodi:version="0.32" inkscape:version="0.43" width="400pt" height="144pt" sodipodi:docbase="D:\wiki_svg" sodipodi:docname="Or-gate.png.svg" version="1.0">
+            <path id="rect2193" style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:7.49999857;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1" d="M 148,169.24997 C 147.86307,169.25544 189.01219,161.81425 189.01219,89.999999 C 189.01219,17.478772 147.99697,10.749695 148,10.750027 C 214.25305,18.014053 257.40202,7.7267425 303,90.000005 C 269,162.74602 224.41039,166.19896 148,169.24997 z " sodipodi:nodetypes="czscs"/>
+        </svg> -->
+    </div>
+
+    <!-- <div class="container">
         <h1>MULTIPLEXADORES</h1>
         <div class="dois-dig">
             <p>DOIS DÍGITOS</p>
@@ -44,11 +103,12 @@
             <input type="number" name="entrada12" id="o-en" min="0" max="1">
             <button type="button" class="manobre">MANOBRE</button>
         </div>
-    </div>
+    </div> -->
     <footer>
         <div class="social">
             <a href="https://github.com/delellisc/multiplexadores" class="fa fa-github" target="_blank"></a>
         </div>
     </footer>
 </body>
+
 </html>
