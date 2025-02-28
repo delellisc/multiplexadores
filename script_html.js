@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // executar MUX de duas entradas
 document.addEventListener("DOMContentLoaded", () => {
-    document.querySelector(".dois-dig").addEventListener("click", duasMult);
+    document.querySelector(".div-mux-dois").addEventListener("click", duasMult);
 });
 
 function duasMult(){
@@ -30,7 +30,7 @@ function duasMult(){
 
 // executar MUX de quatro entradas
 document.addEventListener("DOMContentLoaded", () => {
-    document.querySelector(".quatro-dig").addEventListener("click", quatroMult);
+    document.querySelector(".div-mux-quatro").addEventListener("click", quatroMult);
 });
 
 function quatroMult(){
@@ -53,7 +53,7 @@ function quatroMult(){
 
 // executar MUX de oito entradas
 document.addEventListener("DOMContentLoaded", () => {
-    document.querySelector(".oito-dig").addEventListener("click", oitoMult);
+    document.querySelector(".div-mux-oito").addEventListener("click", oitoMult);
 });
 
 function oitoMult(){
