@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUX 4 entradas</title>
+    <link rel="stylesheet" href="./style_vector.css">
+    <script src="./script_vector.js" type="module"></script>
+</head>
+
+<body>
+    <svg width="628" height="500" viewBox="0 0 628 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g id="s0" class="nivelLogicoBaixo">
+            <!-- s0 -->
+            <path class="line"
+                d="M166 392H269M166 392V494M166 392V281M166 171H269M166 171V281M166 171V62M166 61H197M166 281H197M164 61H196M170 494C170 491.791 168.209 490 166 490C163.791 490 162 491.791 162 494C162 496.209 163.791 498 166 498C168.209 498 170 496.209 170 494ZM170 281C170 278.791 168.209 277 166 277C163.791 277 162 278.791 162 281C162 283.209 163.791 285 166 285C168.209 285 170 283.209 170 281ZM170 392C170 389.791 168.209 388 166 388C163.791 388 162 389.791 162 392C162 394.209 163.791 396 166 396C168.209 396 170 394.209 170 392ZM170 171C170 168.791 168.209 167 166 167C163.791 167 162 168.791 162 171C162 173.209 163.791 175 166 175C168.209 175 170 173.209 170 171Z"
+                stroke="#B11010" stroke-width="4" />
+        </g>
+
+        <g id="s1" class="nivelLogicoBaixo">
+            <!-- s1 -->
+            <path class="line"
+                d="M101 365H102M102 365H269M102 365V490M102 365V225M102 490C104.209 490 106 491.791 106 494C106 496.209 104.209 498 102 498C99.7909 498 98 496.209 98 494C98 491.791 99.7909 490 102 490ZM103 255H269M106 365C106 362.791 104.209 361 102 361C99.7909 361 98 362.791 98 365C98 367.209 99.7909 369 102 369C104.209 369 106 367.209 106 365ZM106 255C106 252.791 104.209 251 102 251C99.7909 251 98 252.791 98 255C98 257.209 99.7909 259 102 259C104.209 259 106 257.209 106 255Z"
+                stroke-width="4" />
+        </g>
+
+        <g id="not0" class="nivelLogicoAlto">
+            <!-- saída not0 -->
+            <path class="line" d="M243 281H269M243 61H269" stroke-width="4" />
+        </g>
+
+        <g id="not1" class="nivelLogicoAlto">
+            <!-- saída not1 -->
+            <path class="line"
+                d="M102 178V145M102 145V34M102 145H101M102 145H269M102 34V33M102 34H101M102 34H269M106 145C106 142.791 104.209 141 102 141C99.7909 141 98 142.791 98 145C98 147.209 99.7909 149 102 149C104.209 149 106 147.209 106 145Z"
+                stroke-width="4" />
+        </g>
+
+
+        <!--     <path
+            d="M102 361C104.209 361 106 362.791 106 365C106 367.209 104.209 369 102 369C99.7909 369 98 367.209 98 365C98 362.791 99.7909 361 102 361Z"
+            fill="#B110A7" /> -->
+
+        <!-- <path
+            d="M102 490C104.209 490 106 491.791 106 494C106 496.209 104.209 498 102 498C99.7909 498 98 496.209 98 494C98 491.791 99.7909 490 102 490Z"
+            fill="#B110A7" /> -->
+
+        <!-- <path
+            d="M102 251C104.209 251 106 252.791 106 255C106 257.209 104.209 259 102 259C99.7909 259 98 257.209 98 255C98 252.791 99.7909 251 102 251Z"
+            fill="#B110A7" /> -->
+
+        <!-- <path
+            d="M102 141C104.209 141 106 142.791 106 145C106 147.209 104.209 149 102 149C99.7909 149 98 147.209 98 145C98 142.791 99.7909 141 102 141Z"
+            fill="#12E0E0" /> -->
+
+        <g id="and1out" class="nivelLogicoBaixo">
+            <!-- saída and1 -->
+            <path class="line" d="M343.5 36.2935L431.5 36.2935L431.5 173.139L479.264 173.139" stroke="#B11010"
+                stroke-width="4" />
+        </g>
+
+        <g id="and2out" class="nivelLogicoBaixo">
+            <!-- saída and2 -->
+            <path class="line" d="M343.5 145.082L394 145.082L394 191.082L484 191.082" stroke="#B11010"
+                stroke-width="4" />
+        </g>
+
+        <g id="and3out" class="nivelLogicoBaixo">
+            <!-- saída and3 -->
+            <path class="line" d="M343.5 256L394 256L394 210L484 210" stroke="#B11010" stroke-width="4" />
+        </g>
+
+
+        <g id="and4out" class="nivelLogicoBaixo">
+            <!-- saída and4 -->
+            <path class="line" d="M343.5 365L431.5 365L431.5 228.154L479.264 228.154" stroke="#B11010"
+                stroke-width="4" />
+        </g>
+
+
+        <g id="or0" class="nivelLogicoBaixo">
+            <!-- saída or -->
+            <path class="line"
+                d="M552 200H619M626 200C626 197.791 624.209 196 622 196C619.791 196 618 197.791 618 200C618 202.209 619.791 204 622 204C624.209 204 626 202.209 626 200Z"
+                stroke="#B11010" stroke-width="4" />
+            <!-- preenchimento da saída or -->
+            <path class="circle"
+                d="M622 196C624.209 196 626 197.791 626 200C626 202.209 624.209 204 622 204C619.791 204 618 202.209 618 200C618 197.791 619.791 196 622 196Z"
+                fill="#B11010" />
+        </g>
+
+        <g id="e0" class="nivelLogicoBaixo">
+            <!-- e0 -->
+            <path class="line"
+                d="M6 9H269M10 9C10 6.79086 8.20914 5 6 5C3.79086 5 2 6.79086 2 9C2 11.2091 3.79086 13 6 13C8.20914 13 10 11.2091 10 9Z"
+                stroke="black" stroke-width="4" />
+            <!-- preenchimento e0 -->
+            <path class="circle"
+                d="M6 5C8.20914 5 10 6.79086 10 9C10 11.2091 8.20914 13 6 13C3.79086 13 2 11.2091 2 9C2 6.79086 3.79086 5 6 5Z"
+                fill="black" />
+        </g>
+
+        <g id="e1" class="nivelLogicoBaixo">
+            <!-- e1 -->
+            <path class="line"
+                d="M6 119H269M10 119C10 116.791 8.20914 115 6 115C3.79086 115 2 116.791 2 119C2 121.209 3.79086 123 6 123C8.20914 123 10 121.209 10 119Z"
+                stroke="#48B110" stroke-width="4" />
+            <!-- preenchimento e1 -->
+            <path class="circle"
+                d="M6 115C8.20914 115 10 116.791 10 119C10 121.209 8.20914 123 6 123C3.79086 123 2 121.209 2 119C2 116.791 3.79086 115 6 115Z"
+                fill="#48B110" />
+        </g>
+
+        <g id="e2" class="nivelLogicoBaixo">
+            <!-- e2 -->
+            <path class="line"
+                d="M6 230H269M10 230C10 227.791 8.20914 226 6 226C3.79086 226 2 227.791 2 230C2 232.209 3.79086 234 6 234C8.20914 234 10 232.209 10 230Z"
+                stroke="#103DB1" stroke-width="4" />
+            <!-- preenchimento e2 -->
+            <path class="circle"
+                d="M6 226C8.20914 226 10 227.791 10 230C10 232.209 8.20914 234 6 234C3.79086 234 2 232.209 2 230C2 227.791 3.79086 226 6 226Z"
+                fill="#103DB1" />
+        </g>
+
+        <g id="e3" class="nivelLogicoBaixo">
+            <!-- e3 -->
+            <path class="line"
+                d="M6 340H269M10 340C10 337.791 8.20914 336 6 336C3.79086 336 2 337.791 2 340C2 342.209 3.79086 344 6 344C8.20914 344 10 342.209 10 340Z"
+                stroke="#ACB110" stroke-width="4" />
+            <!-- preenchimento e3 -->
+            <path class="circle"
+                d="M6 336C8.20914 336 10 337.791 10 340C10 342.209 8.20914 344 6 344C3.79086 344 2 342.209 2 340C2 337.791 3.79086 336 6 336Z"
+                fill="#ACB110" />
+        </g>
+
+        <!-- ************************************ -->
+        <!-- portas lógicas -->
+        <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M269 112H306.5C327.211 112 344 126.775 344 145C344 163.225 327.211 178 306.5 178H269V112Z" stroke="black"
+            stroke-width="3" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M269 2H306.5C327.211 2 344 16.7746 344 35C344 53.2254 327.211 68 306.5 68H269V2Z" stroke="black"
+            stroke-width="3" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M269 332H306.5C327.211 332 344 346.775 344 365C344 383.225 327.211 398 306.5 398H269V332Z" stroke="black"
+            stroke-width="3" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M269 222H306.5C327.211 222 344 236.775 344 255C344 273.225 327.211 288 306.5 288H269V222Z" stroke="black"
+            stroke-width="3" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M477 167H514.5C531.167 168.833 531.167 168.833 552 200C531.167 231.167 531.167 231.167 514.5 233H477C488.155 206.996 488.068 192.546 477 167Z"
+            stroke="black" stroke-width="3" />
+        <path
+            d="M239.27 276.706C241.33 276.706 243 278.405 243 280.5C243 282.595 241.33 284.294 239.27 284.294C237.21 284.294 235.541 282.595 235.541 280.5C235.541 278.405 237.21 276.706 239.27 276.706Z"
+            stroke="black" stroke-width="3" />
+        <path d="M197 302V259L234.297 280.5L197 302Z" stroke="black" stroke-width="3" />
+        <path
+            d="M239.27 57.7059C241.33 57.7059 243 59.4046 243 61.5C243 63.5954 241.33 65.2941 239.27 65.2941C237.21 65.2941 235.541 63.5954 235.541 61.5C235.541 59.4046 237.21 57.7059 239.27 57.7059Z"
+            stroke="black" stroke-width="3" />
+        <path d="M197 83V40L234.297 61.5L197 83Z" stroke="black" stroke-width="3" />
+        <path
+            d="M98.7059 181.73C98.7059 179.67 100.405 178 102.5 178C104.595 178 106.294 179.67 106.294 181.73C106.294 183.79 104.595 185.459 102.5 185.459C100.405 185.459 98.7059 183.79 98.7059 181.73Z"
+            stroke="black" stroke-width="3" />
+        <path d="M124 224H81L102.5 186.703L124 224Z" stroke="black" stroke-width="3" />
+    </svg>
+    <table>
+        <thead>
+            <tr>
+                <th>S1</th>
+                <th>S0</th>
+                <th>X</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="e0-row" class="linhaLogicoAlto">
+                <th>0</th>
+                <th>0</th>
+                <th>E0</th>
+            </tr>
+            <tr id="e1-row">
+                <th>0</th>
+                <th>1</th>
+                <th>E1</th>
+            </tr>
+            <tr id="e2-row">
+                <th>1</th>
+                <th>0</th>
+                <th>E2</th>
+            </tr>
+            <tr id="e3-row">
+                <th>1</th>
+                <th>1</th>
+                <th>E3</th>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
