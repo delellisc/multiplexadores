@@ -146,6 +146,7 @@ document.getElementById('ore1').addEventListener("click", function () {
 function acenderElementosAND(id) {
     const group = document.getElementById(id);
     const elements = group.querySelectorAll("line, circle");
+    console.log(elements);
 
     elements.forEach(el => {
         if (el.classList.contains("nivelLogicoBaixo")){

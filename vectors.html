@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUX 2 entradas</title>
+    <link rel="stylesheet" href="./style_vector.css">
+    <script src="./script_vector.js" type="module"></script>
+</head>
+
+<body>
+    <svg width="500" height="404" viewBox="0 0 500 404" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- ***************** -->
+        <!-- entradas e saídas -->
+        <!-- saida da not -->
+        <g id="not0" class="nivelLogicoAlto">
+            <path class="line" d="M150.822 211.161H207.797" stroke-width="4" />
+        </g>
+
+        <!-- s0  -->
+        <g id="s0" class="nivelLogicoBaixo">
+            <path class="line" id="s0and1in" d="M60.0847 396.856V60.2839H207.797" stroke-width="4" />
+            <path class="line" id="s0notin" d="M104.398 211.161H60.0847" stroke-width="4" />
+            <path class="circle" id="s0notc"
+                d="M60.0847 204.831C63.581 204.831 66.4152 207.665 66.4152 211.161C66.4152 214.657 63.581 217.492 60.0847 217.492C56.5885 217.492 53.7542 214.657 53.7542 211.161C53.7542 207.665 56.5885 204.831 60.0847 204.831Z"
+                fill="#31615F" />
+            <path class="circle" id="s0c"
+                d="M60.0847 390.525C63.581 390.525 66.4152 393.36 66.4152 396.856C66.4152 400.352 63.581 403.186 60.0847 403.186C56.5885 403.186 53.7542 400.352 53.7542 396.856C53.7542 393.36 56.5885 390.525 60.0847 390.525Z"
+                fill="#31615F" />
+        </g>
+
+        <!-- e0 -->
+        <g id="in0" class="nivelLogicoBaixo">
+            <path class="line" id="and2in" d="M9.44067 168.958H206.742" stroke-width="4" />
+            <path class="circle" id="and2c"
+                d="M7.33051 162.627C10.8268 162.627 13.661 165.461 13.661 168.958C13.661 172.454 10.8268 175.288 7.33051 175.288C3.83427 175.288 1 172.454 1 168.958C1 165.461 3.83427 162.627 7.33051 162.627Z"
+                fill="#31615F" />
+        </g>
+        <!-- e1 -->
+        <g id="in1" class="nivelLogicoBaixo">
+            <path class="line" id="and1in" d="M9.44067 14.9153H206.742" stroke-width="4" />
+            <path class="circle" id="and1c"
+                d="M9.44068 8.58475C12.9369 8.58475 15.7712 11.419 15.7712 14.9153C15.7712 18.4115 12.9369 21.2458 9.44068 21.2458C5.94443 21.2458 3.11017 18.4115 3.11017 14.9153C3.11017 11.419 5.94443 8.58475 9.44068 8.58475Z"
+                fill="#31615F" />
+        </g>
+        <!-- saida and2 -->
+        <g id="and2out" class="nivelLogicoBaixo">
+            <path class="line" d="M283.763 190.059H325.966V135.195H363.949"
+                stroke-width="4" />
+        </g>
+
+        <!-- saida and1 -->
+        <g id="and1out" class="nivelLogicoBaixo">
+            <path class="line" d="M283.763 40.2373H325.966V95.1017H363.949"
+                stroke-width="4" />
+        </g>
+
+        <!-- saída or -->
+        <g id="or0" class="nivelLogicoBaixo">
+            <path class="line" id="line" d="M433.585 116.203H493.725" stroke-width="4" />
+            <path class="circle" id="circle"
+                d="M492.669 109.873C496.166 109.873 499 112.707 499 116.203C499 119.7 496.166 122.534 492.669 122.534C489.173 122.534 486.339 119.7 486.339 116.203C486.339 112.707 489.173 109.873 492.669 109.873Z"
+                fill="#31615F" />
+        </g>
+
+        <!-- ************** -->
+        <!-- portas lógicas -->
+        <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M208 2H246C266.987 2 284 19.237 284 40.5C284 61.763 266.987 79 246 79H208V2Z" stroke="black"
+            stroke-width="4" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M208 152H246C266.987 152 284 169.013 284 190C284 210.987 266.987 228 246 228H208V152Z" stroke="black"
+            stroke-width="4" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M358 79H396C412.889 81.0833 412.889 81.0833 434 116.5C412.889 151.917 412.889 151.917 396 154H358C369.304 124.45 369.215 108.03 358 79Z"
+            stroke="black" stroke-width="4" />
+        <path
+            d="M146.27 207.706C148.33 207.706 150 209.405 150 211.5C150 213.595 148.33 215.294 146.27 215.294C144.21 215.294 142.541 213.595 142.541 211.5C142.541 209.405 144.21 207.706 146.27 207.706Z"
+            stroke="black" stroke-width="4" />
+        <path d="M104 233V190L141.297 211.5L104 233Z" stroke="black" stroke-width="4" />
+    </svg>
+    <table>
+        <thead>
+            <tr>
+                <th>S0</th>
+                <th>X</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="e0-row" class="linhaLogicoAlto">
+                <th>0</th>
+                <th>E0</th>
+            </tr>
+            <tr id="e1-row">
+                <th>1</th>
+                <th>E1</th>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
