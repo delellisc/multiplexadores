@@ -71,3 +71,36 @@ tr:hover {
     transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
     font-weight: 600;
 }
+
+.buttons-container {
+    display: flex;
+}
+
+.buttons-container div{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #31615F;
+    width: 75px;
+    height: 75px;
+    border: 2px solid;
+    border-radius: 16px;
+    color: white;
+    user-select: none;
+}
+
+.buttons-container div:hover {
+    background-color: #3BE799;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.buttonClicked {
+    background-color: #3BE799;
+    /* filter: drop-shadow(0 0 5px #3BE799) drop-shadow(0 0 25px #3BE799); */
+    /* transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out; */
+}
