@@ -26,15 +26,15 @@ function update2MUX() {
     const and2Output = document.getElementById("d-and2out");
     const orOutput = document.getElementById("d-or0");
 
+    const tableRows = [e0Row, e1Row];
+
     // NOT = S0'
     if (isHighLevel(s0)) {
+        setActiveRow(tableRows[1], tableRows);
         not0.classList.replace("nivelLogicoAlto", "nivelLogicoBaixo");
-        e0Row.classList.replace("linhaLogicoAlto", "linhaLogicoBaixo");
-        e1Row.classList.add("linhaLogicoAlto");
     } else {
+        setActiveRow(tableRows[0], tableRows);
         not0.classList.replace("nivelLogicoBaixo", "nivelLogicoAlto");
-        e1Row.classList.replace("linhaLogicoAlto", "linhaLogicoBaixo");
-        e0Row.classList.add("linhaLogicoAlto");
     }
 
     // AND1 = S0 ⋅ IN1
@@ -80,27 +80,19 @@ function update4MUX() {
 
     const tableRows = [e0Row, e1Row, e2Row, e3Row];
 
+    // operação para retornar o index no array de acordo com operações binárias.
+    // caso s1 = true, (isHighLevel(s1) << 1) retornará o valor numérico de 2
+    // caso s0 = true, (isHighLevel(s0)) retornará o valor numérico de 1
+    // a soma desses valores retorna o endereço da linha correspondente no array
+    const rowIndex = ((isHighLevel(s1) << 1) | isHighLevel(s0));
+    setActiveRow(tableRows[rowIndex], tableRows);
+
+
     // NOT0 = S0'
     if (isHighLevel(s0)) {
         not0.classList.replace("nivelLogicoAlto", "nivelLogicoBaixo");
-        // S1 | S0 | X = E3
-        if (isHighLevel(s1)) {
-            setActiveRow(e3Row, tableRows);
-        }
-        // S1' | S0 | X = E1
-        else {
-            setActiveRow(e1Row, tableRows);
-        }
     } else {
         not0.classList.replace("nivelLogicoBaixo", "nivelLogicoAlto");
-        // S1 | S0' | X = E2
-        if (isHighLevel(s1)) {
-            setActiveRow(e2Row, tableRows);
-        }
-        // S1' | S0' | X = E0
-        else {
-            setActiveRow(e0Row, tableRows);
-        }
     }
 
     // NOT1 = S1'
