@@ -1,5 +1,6 @@
 .container {
     display: flex;
+    font-family: "Inter", sans-serif;
 }
 
 .nivelLogicoBaixo .line {
@@ -108,8 +109,14 @@ tr:hover {
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
+        text-align: center;
+        justify-content: center;
     }
 
+    /* p {
+        width: 75vw;
+    }
+ */
     table {
         font-size: 18px;
         width: 95vw;
@@ -160,6 +167,6 @@ tr:hover {
 
     svg {
         width: 95vw;
-        height: 95vw;
+        height: 75vw;
     }
 }
