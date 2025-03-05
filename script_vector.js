@@ -315,11 +315,20 @@ document.querySelectorAll("#q-s0, #q-s1, #q-e0, #q-e1, #q-e2, #q-e3").forEach(el
     });
 });
 
+function toggleButton(button){
+    if (button.classList.contains("button-clicked"))
+        button.classList.remove("button-clicked")
+    else
+        button.classList.add("button-clicked")
+}
+
 // MUX de 8 entradas
 document.querySelectorAll("#o-en, #o-s0, #o-s1, #o-s2, #o-e0, #o-e1, #o-e2, #o-e3, #o-e4, #o-e5, #o-e6, #o-e7").forEach(element => {
     document.getElementById(`${element.id}-button`).addEventListener("click", function () {
         toggleLogicLevel(element);
         update8MUX();
+        toggleButton(this);
+        console.log(this.classList)
     });
     element.addEventListener("click", function () {
         toggleLogicLevel(this);
