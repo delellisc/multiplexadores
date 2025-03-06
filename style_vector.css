@@ -1,34 +1,36 @@
-.container {
+.content-wrapper {
     display: flex;
     font-family: "Inter", sans-serif;
 }
 
 .nivelLogicoBaixo .line {
     cursor: pointer;
-    stroke: #31615F;
-    /* fill: #31615F; */
+    stroke: black;
+    /* stroke: #31615F; */
     transition: stroke 0.5s ease-in-out, fill 0.5s ease-in-out;
 }
 
 .nivelLogicoAlto .line {
     cursor: pointer;
-    stroke: #3BE799;
-    /* fill: #3BE799; */
-    filter: drop-shadow(0 0 5px #3BE799) drop-shadow(0 0 25px #3BE799);
+    stroke: white;
+    /* stroke: #3BE799; */
+    /* filter: drop-shadow(0 0 5px #3BE799) drop-shadow(0 0 25px #3BE799); */
+    filter: drop-shadow(0 0 5px white) drop-shadow(0 0 25px white);
 }
 
 .nivelLogicoBaixo .circle {
     cursor: pointer;
-    /* stroke: #31615F; */
-    fill: #31615F;
+    fill: black;
+    /* fill: #31615F; */
     transition: stroke 0.5s ease-in-out, fill 0.5s ease-in-out;
 }
 
 .nivelLogicoAlto .circle {
     cursor: pointer;
-    /* stroke: #3BE799; */
-    fill: #3BE799;
-    filter: drop-shadow(0 0 5px #3BE799) drop-shadow(0 0 25px #3BE799);
+    fill: white;
+    filter: drop-shadow(0 0 5px white) drop-shadow(0 0 25px white);
+    /* fill: #3BE799; */
+    /* filter: drop-shadow(0 0 5px #3BE799) drop-shadow(0 0 25px #3BE799); */
 }
 
 table {
@@ -51,7 +53,8 @@ td {
 }
 
 th {
-    background-color: #31615F;
+    background-color: black;
+    /* background-color: #31615F; */
     color: white;
     font-weight: 600;
 }
@@ -62,14 +65,17 @@ tr:hover {
 }
 
 .linhaLogicoAlto:hover {
-    background-color: #3BE799;
+    background-color: rgb(120, 120, 120);
+    /* background-color: #3BE799; */
     transition: background-color 0.3s ease-in-out;
 }
 
 .linhaLogicoAlto {
-    background-color: #31615F;
+    background-color: black;
+    filter: drop-shadow(0 0 5px white) drop-shadow(0 0 25px white);
     color: white;
-    filter: drop-shadow(0 0 5px #3BE799) drop-shadow(0 0 25px #3BE799);
+    /* background-color: #31615F; */
+    /* filter: drop-shadow(0 0 5px #3BE799) drop-shadow(0 0 25px #3BE799); */
     transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
     font-weight: 600;
 }
@@ -87,22 +93,19 @@ tr:hover {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    background-color: #31615F;
+    background-color: black;
+    /* background-color: #31615F; */
     width: 75px;
     height: 75px;
-    /* border: 2px solid; */
     border-radius: 16px;
     color: white;
     user-select: none;
 }
 
-/* .buttons-container div:hover {
-    background-color: #31615F;
-    transition: background-color 0.3s ease-in-out;
-} */
-
 .buttons-container div.button-clicked {
-    background-color: #3BE799 !important;
+    color: black;
+    background-color: white !important;
+    /* background-color: #3BE799 !important; */
 }
 
 
