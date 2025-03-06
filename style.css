@@ -82,6 +82,7 @@ body {
 
 .content-wrapper {
     padding: 1vw 1vw;
+    justify-content: center;
 }
 
 .sobrelinha {
