@@ -71,6 +71,10 @@ body {
     text-align: center;
 }
 
+.sobrelinha {
+    text-decoration: overline;
+}
+
 /*.div-info {
     background-color: blue;
 }

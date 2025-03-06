@@ -28,7 +28,7 @@
 
         <div class="div-mux-dois">
             <h3>MULTIPLEXADOR DE DUAS ENTRADAS</h3>
-            <p>Um multiplexador de duas entradas é um circuito lógico que possui duas entradas de dados, uma entrada de seleção e uma saída. O nível lógico aplicado na entrada de seleção determina qual das portas AND será ativada, permitindo que o dado correspondente passe pela porta OR e chegue à saída. A expressão booleana que representa esse comportamento é A = E₀·S̅ + E₁·S, onde S̅ é o complemento da entrada de seleção S.</p>
+            <p>Um multiplexador de duas entradas é um circuito lógico que possui duas entradas de dados, uma entrada de seleção e uma saída. O nível lógico aplicado na entrada de seleção determina qual das portas AND será ativada, permitindo que o dado correspondente passe pela porta OR e chegue à saída. A expressão booleana que representa esse comportamento é X = E₀·S̅ + E₁·S, onde S̅ é o complemento da entrada de seleção S.</p>
 
             <div class="content-wrapper">
                 <div>
@@ -155,11 +155,8 @@
 
         <div class="div-mux-quatro">
             <h3>MULTIPLEXADOR DE QUATRO ENTRADAS</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.</p>
+            <p>Um multiplexador de quatro entradas possui quatro entradas de dados (E<sub>0</sub>, E<sub>1</sub>, E<sub>2</sub>, E<sub>3</sub>) e duas entradas de seleção (S1 e S0), que determinam qual das entradas de dados será transmitida para a saída (X). A seleção é feita de acordo com as combinações possíveis dos valores nas entradas de seleção. A expressão lógica para o multiplexador de quatro entradas é dada por: X = (E<sub>0</sub> · <span class="sobrelinha">S1</span> ·  <span class="sobrelinha">S0</span>) + (E<sub>1</sub> · <span class="sobrelinha">S1</span> · S0) + (E<sub>2</sub> · S1 · <span class="sobrelinha">S0</span>) + (E<sub>3</sub> · S1 · S0). <br>
+                Isso significa que a entrada E<sub>0</sub> será selecionada quando S1 = 0 e S0 = 0, a entrada E<sub>1</sub> será selecionada quando S1 = 0 e S0 = 1, a entrada E<sub>2</sub> será selecionada quando S1 = 1 e S0 = 0, e a entrada E<sub>3</sub> será selecionada quando S1 = 1 e S0 = 1. Assim, dependendo dos valores de S1 e S0, apenas uma das entradas de dados será transmitida para a saída.</p>
 
             <div class="content-wrapper">
                 <div>
@@ -431,11 +428,9 @@
 
         <div class="div-mux-oito">
             <h3>MULTIPLEXADOR DE OITO ENTRADAS</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.</p>
+            <p><p>Um multiplexador de 8 entradas possui 8 entradas de dados (E<sub>0</sub>, E<sub>1</sub>, E<sub>2</sub>, E<sub>3</sub>, E<sub>4</sub>, E<sub>5</sub>, E<sub>6</sub>, E<sub>7</sub>) e três entradas de seleção (S2, S1 e S0), responsáveis por determinar qual entrada de dados será encaminhada para a saída (X). A seleção é realizada com base nas diferentes combinações possíveis dos valores nas entradas de seleção. A expressão lógica para o multiplexador de 8 entradas é dada por: X = (E<sub>0</sub> · <span class="sobrelinha">S2</span> · <span class="sobrelinha">S1</span> · <span class="sobrelinha">S0</span>) + (E<sub>1</sub> · <span class="sobrelinha">S2</span> · <span class="sobrelinha">S1</span> · S0) + (E<sub>2</sub> · <span class="sobrelinha">S2</span> · S1 · <span class="sobrelinha">S0</span>) + (E<sub>3</sub> · <span class="sobrelinha">S2</span> · S1 · S0) + (E<sub>4</sub> · S2 · <span class="sobrelinha">S1</span> · <span class="sobrelinha">S0</span>) + (E<sub>5</sub> · S2 · S1 · <span class="sobrelinha">S0</span>) + (E<sub>6</sub> · S2 · <span class="sobrelinha">S1</span> · S0) + (E<sub>7</sub> · S2 · S1 · S0). <br>
+                Ou seja, a entrada E<sub>0</sub> será selecionada quando S2 = 0, S1 = 0 e S0 = 0, a entrada E<sub>1</sub> será escolhida quando S2 = 0, S1 = 0 e S0 = 1, a entrada E<sub>2</sub> será selecionada quando S2 = 0, S1 = 1 e S0 = 0, a entrada E<sub>3</sub> será escolhida quando S2 = 0, S1 = 1 e S0 = 1, a entrada E<sub>4</sub> será ativada quando S2 = 1, S1 = 0 e S0 = 0, a entrada E<sub>5</sub> será selecionada quando S2 = 1, S1 = 0 e S0 = 1, a entrada E<sub>6</sub> será transmitida quando S2 = 1, S1 = 1 e S0 = 0, e a entrada E<sub>7</sub> será escolhida quando S2 = 1, S1 = 1 e S0 = 1. Dessa forma, dependendo do valor das entradas de seleção, apenas uma das entradas de dados será enviada para a saída.</p>
+</p>
 
             <div class="content-wrapper">
                 <div id="8mux">
