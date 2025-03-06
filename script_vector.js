@@ -295,6 +295,7 @@ function update8MUX() {
 document.querySelectorAll("#d-s0, #d-e0, #d-e1").forEach(element => {
     document.getElementById(`${element.id}-button`).addEventListener("click", function () {
         toggleLogicLevel(element);
+        toggleButton(this);
         update2MUX();
     });
     element.addEventListener("click", function () {
@@ -307,6 +308,7 @@ document.querySelectorAll("#d-s0, #d-e0, #d-e1").forEach(element => {
 document.querySelectorAll("#q-s0, #q-s1, #q-e0, #q-e1, #q-e2, #q-e3").forEach(element => {
     document.getElementById(`${element.id}-button`).addEventListener("click", function () {
         toggleLogicLevel(element);
+        toggleButton(this);
         update4MUX();
     });
     element.addEventListener("click", function () {
