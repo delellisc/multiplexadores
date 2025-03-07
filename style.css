@@ -54,7 +54,7 @@ h1 {
     align-items: center;
     gap: 10px;
 
-    background-color: #d8d8d8;
+    background-color: #e8e8e8;
     border-radius: 10px;
 
     overflow: auto;
@@ -177,7 +177,7 @@ footer {
     display: flex;
     flex-direction: column;
 
-    background-color: #d8d8d8;
+    background-color: #e8e8e8;
 }
 
 footer a {
