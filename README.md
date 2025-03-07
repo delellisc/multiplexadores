@@ -89,4 +89,55 @@ Projeto da matéria de Sistemas Digitais para desenvolver um projeto que simule 
 ' = ("Barrado ou Negado")
 
 
-## Utilização do sistema
+# Utilização do sistema
+
+## Página Inicial do Projeto  
+
+A página inicial do projeto funciona como um **menu de seleção** para os diferentes tipos de multiplexadores. Ela apresenta uma explicação introdutória sobre o que é um **multiplexador** e seu uso em sistemas digitais.  
+
+Os **botões** correspondentes a cada tipo de multiplexador servem como links que exibem os conteúdos específicos que estavam ocultos na página, onde cada multiplexador será detalhado com:  
+- Explicação sobre seu funcionamento  
+- Tabela-verdade  
+- Diagrama interativo  
+
+Na parte inferior da página, há um **rodapé** com informações sobre a disciplina na qual o projeto foi desenvolvido, além de links para:  
+- O repositório no **GitHub**  
+- Rerência bibliográfica utilizada  
+
+---
+
+## Multiplexador de Duas Entradas  
+
+O **Multiplexador de Duas Entradas** apresenta um **circuito lógico interativo**, onde o usuário pode alterar o estado do circuito clicando nos botões das entradas de seleção (**S, E₀ e E₁**).
+
+### Funcionamento:
+- Quando o usuário interage com os botões, **as conexões ativas no circuito ficam destacadas em azul**, colocando o nível lógico **alto (1)**.
+- O **caminho azul** mostra **qual entrada está sendo definida** e como o sinal percorre o circuito até a saída (**X**).
+- A **tabela verdade**, localizada à direita, muda de cor para destacar a linha correspondente ao estado atual do circuito.
+- O circuito utiliza **portas lógicas AND e OR** para direcionar a saída conforme a seleção feita pelo usuário.
+
+---
+
+## Multiplexador de Quatro Entradas  
+
+O **Multiplexador de Quatro Entradas** permite selecionar qual das quatro entradas de dados (**E₀, E₁, E₂, E₃**) será encaminhada para a saída **X**, dependendo dos valores das **entradas de seleção S₁ e S₀**.
+
+### Funcionamento:
+- O usuário pode alterar os valores das **entradas de dados (E₀, E₁, E₂, E₃)** e das **entradas de seleção (S₁ e S₀)**.
+- Quando um valor é selecionado, o **caminho correspondente no diagrama fica iluminado**, destacando a entrada de dados que está sendo enviada para a saída.
+- A escolha da entrada distribuída é baseada nos valores de **S₁ e S₀**, conforme a **tabela verdade** ao lado do circuito.
+- O circuito utiliza **portas lógicas AND, OR e NOT**.
+
+
+---
+
+## Multiplexador de Oito Entradas  
+
+O **Multiplexador de Oito Entradas** apresenta um **circuito lógico interativo**, onde o usuário pode alterar o estado do circuito clicando nos botões das **entradas de seleção (S₂, S₁, S₀, Enable (E')) e nas entradas de dados (E₀ a E₇)**.
+
+### Funcionamento:
+- Quando o usuário interage com os botões, **as conexões ativas no circuito ficam destacadas em azul**, indicando **o caminho lógico ativado** e como o sinal percorre o circuito até a saída (**Z**).
+- A **tabela verdade**, localizada à direita, muda de cor para destacar a linha correspondente ao estado atual do circuito.
+- O circuito utiliza **portas lógicas AND e OR** para direcionar a saída conforme a combinação dos bits de seleção.
+- O multiplexador possui **três entradas de seleção (S₂, S₁ e S₀)** que determinam **quais das oito entradas de dados (E₀ a E₇) serão transmitidas para a saída Z**.
+- Além disso, há um **sinal de Enable (E')**, que **habilita ou desabilita a saída**.
