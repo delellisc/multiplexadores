@@ -5,7 +5,7 @@ body {
 
     margin: 0;
     padding: 0;
-    
+
     display: flex;
     flex-direction: column;
 
@@ -38,7 +38,10 @@ h1 {
 
 /* ----------------------------- */
 /* divs do container */
-.div-info, .div-mux-dois, .div-mux-quatro, .div-mux-oito {
+.div-info,
+.div-mux-dois,
+.div-mux-quatro,
+.div-mux-oito {
     margin: 0;
     padding: 0;
     padding-bottom: 10px;
@@ -58,6 +61,7 @@ h1 {
 
     font-size: 3vh;
 }
+
 .container div p {
     margin: 0 1vw;
     padding: 0;
@@ -173,13 +177,14 @@ footer {
     display: flex;
     flex-direction: column;
 
-    background-color: #d8d8d8
+    background-color: #d8d8d8;
 }
 
 footer a {
     text-decoration: none;
     font-size: 15px;
 }
+
 footer a:visited {
     color: #012243;
 }
@@ -193,15 +198,14 @@ footer a:hover {
 
 body::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  body::-webkit-scrollbar-track {
+}
+
+body::-webkit-scrollbar-track {
     background: #5E9CC5;
-  }
-  
-  body::-webkit-scrollbar-thumb {
+}
+
+body::-webkit-scrollbar-thumb {
     background-color: #012243;
     border-radius: 15px;
     border: 2px solid #336ea6;
-  }
-  
+}

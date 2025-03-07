@@ -3,15 +3,15 @@
     justify-content: space-between;
     align-items: flex-start;
     font-family: "Inter", sans-serif;
-    height: 100%; /* Ensure it takes up full screen height */
+    height: 100%;
 }
 
 .left-column {
     display: flex;
     flex-direction: column;
-    flex-grow: 1; /* SVG takes up the most space */
-    margin-right: 20px; /* Space between the diagram and the table */
-    justify-content: center; /* Centers content vertically */
+    flex-grow: 1;
+    margin-right: 20px;
+    justify-content: center;
     align-items: center;  
 }
 
@@ -27,7 +27,6 @@ figcaption {
 .table-container {
     flex-shrink: 0;
     width: 360px;
-    /* padding: 10px; */
     border-radius: 5px;
     margin-right: 60px;
 }
