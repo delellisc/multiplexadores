@@ -1,3 +1,64 @@
+function toggleElementColor(h4Element) {
+    const computedStyle = window.getComputedStyle(h4Element);
+    const isWhite = computedStyle.color === "rgb(255, 255, 255)";
+
+    if (isWhite) {
+        h4Element.style.color = "#012243";
+    }
+    else {
+        document.querySelectorAll(".div-mux-info h4").forEach((h4) => {
+            h4.style.color = "#012243";
+        });
+
+        h4Element.style.color = "white";
+    }
+}
+
+function toggleDiv(divElement) {
+    // todos os elementos que não são o desejado recebem "display: none"
+    document.querySelectorAll(".div-mux").forEach((div) => {
+        if (div !== divElement) {
+            div.classList.remove("show");
+            div.classList.add("hide");
+
+            setTimeout(() => {div.style.display = "none"}, 500);
+        }
+    });
+
+    // checa se o elemento está sendo exibido na tela no momento
+    const isVisible = divElement.classList.contains("show");
+
+    // oculta o elemento caso esteja sendo exibido
+    if (isVisible) {
+        divElement.classList.remove("show");
+        divElement.classList.add("hide");
+
+        // é preciso alterar diretamente no js ao invés do css para que
+        // a transição ser realizada antes do elemento desaparecer
+        setTimeout(() => {divElement.style.display = "none"}, 500);
+    }
+    // exibe o elemento caso não esteja sendo exibido
+    else {
+        divElement.style.display = "flex";
+
+        setTimeout(() => {
+            divElement.classList.remove("hide");
+            divElement.classList.add("show");
+        }, 0);
+    }
+}
+
+document.querySelectorAll(".div-mux-info").forEach((element) =>
+    element.addEventListener("click", function () {
+        const div = document.querySelector(`.div-mux-${element.id}`);
+        const h4 = this.querySelector("h4"); // Selects the first h4 inside the clicked div
+
+        toggleDiv(div);
+        if (h4) toggleElementColor(h4);
+    })
+);
+
+
 function toggleLogicLevel(element) {
     element.classList.toggle("nivelLogicoBaixo");
     element.classList.toggle("nivelLogicoAlto");
@@ -317,7 +378,7 @@ document.querySelectorAll("#q-s0, #q-s1, #q-e0, #q-e1, #q-e2, #q-e3").forEach(el
     });
 });
 
-function toggleButton(button){
+function toggleButton(button) {
     if (button.classList.contains("button-clicked"))
         button.classList.remove("button-clicked")
     else

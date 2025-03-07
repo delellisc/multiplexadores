@@ -23,12 +23,31 @@
             <h3>O QUE É UM MULTIPLEXADOR?</h3>
             <p>Os multiplexadores são dispositivos que permitem a seleção de uma de várias entradas de dados para
                 direcioná-las a uma única saída, sendo amplamente utilizados em sistemas digitais (Tocci, Widmer e Moss,
-                2011).</p>
+                2011).
+            </p>
+            <p>
+                Clique no Multiplexador desejado para exibir seu diagrama
+                lógico e uma explicação sobre seu funcionamento!
+            </p>
+            <div class="selection-menu">
+                <div class="div-mux-info" id="dois">
+                    <h4>MULTIPLEXADOR DE DUAS ENTRADAS</h4>
+                </div>
+                <div class="div-mux-info" id="quatro">
+                    <h4>MULTIPLEXADOR DE QUATRO ENTRADAS</h4>
+                </div>
+                <div class="div-mux-info" id="oito">
+                    <h4>MULTIPLEXADOR DE OITO ENTRADAS</h4>
+                </div>
+            </div>
         </div>
 
-        <div class="div-mux-dois">
+        <div class="div-mux div-mux-dois">
             <h3>MULTIPLEXADOR DE DUAS ENTRADAS</h3>
-            <p>Um multiplexador de duas entradas é um circuito lógico que possui duas entradas de dados, uma entrada de seleção e uma saída. O nível lógico aplicado na entrada de seleção determina qual das portas AND será ativada, permitindo que o dado correspondente passe pela porta OR e chegue à saída. A expressão booleana que representa esse comportamento é X = E₀·S̅ + E₁·S, onde S̅ é o complemento da entrada de seleção S.</p>
+
+            <p>
+                Interaja com as entradas do diagrama ou com os botões abaixo para alterar o estado do circuito!
+            </p>
 
             <div class="buttons-container" id="2mux">
                 <div id="d-s0-button" class="button">S</div>
@@ -151,12 +170,23 @@
                     </table>
                 </div>
             </div>
+
+            <p>Um multiplexador de duas entradas é um circuito lógico que possui duas entradas de dados, uma entrada de
+                seleção e uma saída. O nível lógico aplicado na entrada de seleção determina qual das portas AND será
+                ativada, permitindo que o dado correspondente passe pela porta OR e chegue à saída. Sendo S̅ o
+                complemento da entrada de seleção S, a expressão booleana que representa esse comportamento é:
+            </p>
+            <p>
+                X = E₀·S̅ + E₁·S
+            </p>
         </div>
 
-        <div class="div-mux-quatro">
+        <div class="div-mux div-mux-quatro">
             <h3>MULTIPLEXADOR DE QUATRO ENTRADAS</h3>
-            <p>Um multiplexador de quatro entradas possui quatro entradas de dados (E<sub>0</sub>, E<sub>1</sub>, E<sub>2</sub>, E<sub>3</sub>) e duas entradas de seleção (S1 e S0), que determinam qual das entradas de dados será transmitida para a saída (X). A seleção é feita de acordo com as combinações possíveis dos valores nas entradas de seleção. A expressão lógica para o multiplexador de quatro entradas é dada por: X = (E<sub>0</sub> · <span class="sobrelinha">S1</span> ·  <span class="sobrelinha">S0</span>) + (E<sub>1</sub> · <span class="sobrelinha">S1</span> · S0) + (E<sub>2</sub> · S1 · <span class="sobrelinha">S0</span>) + (E<sub>3</sub> · S1 · S0). <br>
-                Isso significa que a entrada E<sub>0</sub> será selecionada quando S1 = 0 e S0 = 0, a entrada E<sub>1</sub> será selecionada quando S1 = 0 e S0 = 1, a entrada E<sub>2</sub> será selecionada quando S1 = 1 e S0 = 0, e a entrada E<sub>3</sub> será selecionada quando S1 = 1 e S0 = 1. Assim, dependendo dos valores de S1 e S0, apenas uma das entradas de dados será transmitida para a saída.</p>
+
+            <p>
+                Interaja com as entradas do diagrama ou com os botões abaixo para alterar o estado do circuito!
+            </p>
 
             <div class="buttons-container" id="mux4-buttons">
                 <div id="q-s1-button" class="button">S1</div>
@@ -423,27 +453,46 @@
                     </table>
                 </div>
             </div>
+
+            <p>Um multiplexador de quatro entradas possui quatro entradas de dados (E<sub>0</sub>, E<sub>1</sub>,
+                E<sub>2</sub>, E<sub>3</sub>) e duas entradas de seleção (S1 e S0), que determinam qual das entradas de
+                dados será transmitida para a saída (X). A seleção é feita de acordo com as combinações possíveis dos
+                valores nas entradas de seleção. A expressão lógica para o multiplexador de quatro entradas é dada por:
+            </p>
+
+            <p>
+                X = (E<sub>0</sub> · <span class="sobrelinha">S1</span> · <span class="sobrelinha">S0</span>) +
+                (E<sub>1</sub> · <span class="sobrelinha">S1</span> · S0) + (E<sub>2</sub> · S1 · <span
+                    class="sobrelinha">S0</span>) + (E<sub>3</sub> · S1 · S0)
+            </p>
+
+            <p>
+                Isso significa que a entrada E<sub>0</sub> será selecionada quando S1 = 0 e S0 = 0, a entrada
+                E<sub>1</sub> será selecionada quando S1 = 0 e S0 = 1, a entrada E<sub>2</sub> será selecionada quando
+                S1 = 1 e S0 = 0, e a entrada E<sub>3</sub> será selecionada quando S1 = 1 e S0 = 1. Assim, dependendo
+                dos valores de S1 e S0, apenas uma das entradas de dados será transmitida para a saída.
+            </p>
         </div>
 
-        <div class="div-mux-oito">
+        <div class="div-mux div-mux-oito">
             <h3>MULTIPLEXADOR DE OITO ENTRADAS</h3>
-            <p><p>Um multiplexador de 8 entradas possui 8 entradas de dados (E<sub>0</sub>, E<sub>1</sub>, E<sub>2</sub>, E<sub>3</sub>, E<sub>4</sub>, E<sub>5</sub>, E<sub>6</sub>, E<sub>7</sub>) e três entradas de seleção (S2, S1 e S0), responsáveis por determinar qual entrada de dados será encaminhada para a saída (X). A seleção é realizada com base nas diferentes combinações possíveis dos valores nas entradas de seleção. A expressão lógica para o multiplexador de 8 entradas é dada por: X = (E<sub>0</sub> · <span class="sobrelinha">S2</span> · <span class="sobrelinha">S1</span> · <span class="sobrelinha">S0</span>) + (E<sub>1</sub> · <span class="sobrelinha">S2</span> · <span class="sobrelinha">S1</span> · S0) + (E<sub>2</sub> · <span class="sobrelinha">S2</span> · S1 · <span class="sobrelinha">S0</span>) + (E<sub>3</sub> · <span class="sobrelinha">S2</span> · S1 · S0) + (E<sub>4</sub> · S2 · <span class="sobrelinha">S1</span> · <span class="sobrelinha">S0</span>) + (E<sub>5</sub> · S2 · S1 · <span class="sobrelinha">S0</span>) + (E<sub>6</sub> · S2 · <span class="sobrelinha">S1</span> · S0) + (E<sub>7</sub> · S2 · S1 · S0). <br>
-                Ou seja, a entrada E<sub>0</sub> será selecionada quando S2 = 0, S1 = 0 e S0 = 0, a entrada E<sub>1</sub> será escolhida quando S2 = 0, S1 = 0 e S0 = 1, a entrada E<sub>2</sub> será selecionada quando S2 = 0, S1 = 1 e S0 = 0, a entrada E<sub>3</sub> será escolhida quando S2 = 0, S1 = 1 e S0 = 1, a entrada E<sub>4</sub> será ativada quando S2 = 1, S1 = 0 e S0 = 0, a entrada E<sub>5</sub> será selecionada quando S2 = 1, S1 = 0 e S0 = 1, a entrada E<sub>6</sub> será transmitida quando S2 = 1, S1 = 1 e S0 = 0, e a entrada E<sub>7</sub> será escolhida quando S2 = 1, S1 = 1 e S0 = 1. Dessa forma, dependendo do valor das entradas de seleção, apenas uma das entradas de dados será enviada para a saída.</p>
-</p>
+            <p>
+                Interaja com as entradas do diagrama ou com os botões abaixo para alterar o estado do circuito!
+            </p>
 
             <div class="buttons-container">
                 <div id="o-en-button" class="button">EN</div>
-                <div id="o-s0-button" class="button">S0</div>
-                <div id="o-s1-button" class="button">S1</div>
-                <div id="o-s2-button" class="button">S2</div>
-                <div id="o-e0-button" class="button">E0</div>
-                <div id="o-e1-button" class="button">E1</div>
-                <div id="o-e2-button" class="button">E2</div>
-                <div id="o-e3-button" class="button">E3</div>
-                <div id="o-e4-button" class="button">E4</div>
-                <div id="o-e5-button" class="button">E5</div>
-                <div id="o-e6-button" class="button">E6</div>
-                <div id="o-e7-button" class="button">E7</div>
+                <div id="o-s0-button" class="button">S<sub>0</sub></div>
+                <div id="o-s1-button" class="button">S<sub>1</sub></div>
+                <div id="o-s2-button" class="button">S<sub>2</sub></div>
+                <div id="o-e0-button" class="button">E<sub>0</sub></div>
+                <div id="o-e1-button" class="button">E<sub>1</sub></div>
+                <div id="o-e2-button" class="button">E<sub>2</sub></div>
+                <div id="o-e3-button" class="button">E<sub>3</sub></div>
+                <div id="o-e4-button" class="button">E<sub>4</sub></div>
+                <div id="o-e5-button" class="button">E<sub>5</sub></div>
+                <div id="o-e6-button" class="button">E<sub>6</sub></div>
+                <div id="o-e7-button" class="button">E<sub>7</sub></div>
             </div>
 
             <div class="content-wrapper">
@@ -848,7 +897,8 @@
                         <path d="M9 244H20" stroke="#012243" stroke-width="2" />
                     </svg>
                     <figcaption>
-                        Multiplexador de oito entradas. Adaptado de TOCCI, Ronald J.; WIDMER, Neal S.; MOSS, Gregory L. <b>Sistemas digitais</b>.
+                        Multiplexador de oito entradas. Adaptado de TOCCI, Ronald J.; WIDMER, Neal S.; MOSS, Gregory L.
+                        <b>Sistemas digitais</b>.
                         Pearson Educação, 2011. p. 522.
                     </figcaption>
                 </div>
@@ -875,62 +925,92 @@
                                 <td>0</td>
                                 <td>0</td>
                                 <td>0</td>
-                                <td>E0</td>
+                                <td>E<sub>0</sub></td>
                             </tr>
                             <tr id="o-e1-row">
                                 <td>0</td>
                                 <td>0</td>
                                 <td>0</td>
                                 <td>1</td>
-                                <td>E1</td>
+                                <td>E<sub>1</sub></td>
                             </tr>
                             <tr id="o-e2-row">
                                 <td>0</td>
                                 <td>0</td>
                                 <td>1</td>
                                 <td>0</td>
-                                <td>E2</td>
+                                <td>E<sub>2</sub></td>
                             </tr>
                             <tr id="o-e3-row">
                                 <td>0</td>
                                 <td>0</td>
                                 <td>1</td>
                                 <td>1</td>
-                                <td>E3</td>
+                                <td>E<sub>3</sub></td>
                             </tr>
                             <tr id="o-e4-row">
                                 <td>0</td>
                                 <td>1</td>
                                 <td>0</td>
                                 <td>0</td>
-                                <td>E4</td>
+                                <td>E<sub>4</sub></td>
                             </tr>
                             <tr id="o-e5-row">
                                 <td>0</td>
                                 <td>1</td>
                                 <td>0</td>
                                 <td>1</td>
-                                <td>E5</td>
+                                <td>E<sub>5</sub></td>
                             </tr>
                             <tr id="o-e6-row">
                                 <td>0</td>
                                 <td>1</td>
                                 <td>1</td>
                                 <td>0</td>
-                                <td>E6</td>
+                                <td>E<sub>6</sub></td>
                             </tr>
                             <tr id="o-e7-row">
                                 <td>0</td>
                                 <td>1</td>
                                 <td>1</td>
                                 <td>1</td>
-                                <td>E7</td>
+                                <td>E<sub>7</sub></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-
             </div>
+
+            <p>Um multiplexador de 8 entradas possui 8 entradas de dados (E<sub>0</sub>, E<sub>1</sub>, E<sub>2</sub>,
+                E<sub>3</sub>, E<sub>4</sub>, E<sub>5</sub>, E<sub>6</sub>, E<sub>7</sub>) e três entradas de seleção
+                (S2, S1 e S0), responsáveis por determinar qual entrada de dados será encaminhada para a saída (X). A
+                seleção é realizada com base nas diferentes combinações possíveis dos valores nas entradas de seleção. A
+                expressão lógica para o multiplexador de 8 entradas é dada por: </p>
+
+            <p style="font-size:medium;">X = (E<sub>0</sub> · <span class="sobrelinha">S2</span> · <span
+                    class="sobrelinha">S1</span> · <span class="sobrelinha">S0</span>) + (E<sub>1</sub> · <span
+                    class="sobrelinha">S2</span> · <span class="sobrelinha">S1</span> · S0) + (E<sub>2</sub> · <span
+                    class="sobrelinha">S2</span> · S1 ·
+                <span class="sobrelinha">S0</span>) + (E<sub>3</sub> · <span class="sobrelinha">S2</span> · S1 · S0) +
+                (E<sub>4</sub> · S2 · <span class="sobrelinha">S1</span> · <span class="sobrelinha">S0</span>) +
+                (E<sub>5</sub> · S2 · S1 · <span class="sobrelinha">S0</span>) + (E<sub>6</sub> · S2 · <span
+                    class="sobrelinha">S1</span> · S0) + (E<sub>7</sub> · S2 · S1 · S0)
+            </p>
+            <p>
+                Ou seja, a entrada E<sub>0</sub> será selecionada quando S2 = 0, S1 = 0 e S0 = 0, a entrada
+                E<sub>1</sub> será escolhida quando S2 = 0, S1 = 0 e S0 = 1, a entrada E<sub>2</sub> será selecionada
+                quando S2 = 0, S1 = 1 e S0 = 0, a entrada E<sub>3</sub> será escolhida quando S2 = 0, S1 = 1 e S0 = 1, a
+                entrada E<sub>4</sub> será ativada quando S2 = 1, S1 = 0 e S0 = 0, a entrada E<sub>5</sub> será
+                selecionada quando S2 = 1, S1 = 0 e S0 = 1, a entrada E<sub>6</sub> será transmitida quando S2 = 1, S1 =
+                1 e S0 = 0, e a entrada E<sub>7</sub> será escolhida quando S2 = 1, S1 = 1 e S0 = 1. Dessa forma,
+                dependendo do valor das entradas de seleção, apenas uma das entradas de dados será enviada para a saída.
+            </p>
+
+            <p>
+                OBS.: no diagrama retirado do livro, o multiplexador de 8 entradas possui uma entrada a mais, o Enable.
+                Sua expressão lógica portanto seria uma soma entre os produtos apresentados acima, porém cada produto
+                seria associado à uma AND com o Enable, assim como demonstrado no diagrama.
+            </p>
         </div>
 
     </div>
@@ -941,7 +1021,8 @@
                 href="https://www.kufunda.net/publicdocs/Sistemas%20Digitais%20Princ%C3%ADpios%20e%20Aplica%C3%A7%C3%B5es%20(Ronald%20J.%20Tocci,%20Neal%20S.%20Widmer%20etc.).pdf"
                 target="_blank" rel="noopener noreferrer">Referência Bibliográfica</a>
             <br>
-            <a id="github" href="https://github.com/delellisc/multiplexadores" class="fa fa-github" target="_blank"> Repositório GitHub</a>
+            <a id="github" href="https://github.com/delellisc/multiplexadores" class="fa fa-github" target="_blank">
+                Repositório GitHub</a>
             <br>
             <br>
         </div>

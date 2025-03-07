@@ -1,6 +1,37 @@
 .content-wrapper {
     display: flex;
+    align-items: center;
     font-family: "Inter", sans-serif;
+}
+
+.div-mux {
+    display: none;
+}
+
+.hide {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0s 0.5s;
+}
+
+.show {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.selection-menu {
+    display: flex;
+    gap: 5vw;
+}
+
+.selection-menu div{
+    cursor: pointer;
+}
+
+.selection-menu h4:hover{
+    color: white;
+    transition: color 0.2s ease-in-out;
 }
 
 .nivelLogicoBaixo .line {
@@ -112,32 +143,39 @@ tr:hover {
     filter: drop-shadow(0 0 5px white) drop-shadow(0 0 25px white);
 }
 
-
 @media (max-width: 768px) {
+    figcaption {
+        display: none;
+        font-size: 12px;
+        /* max-width: 80%; */
+    }
+
+    .content-wrapper {
+        justify-content: center;
+    }
+
     .container {
         flex-direction: column;
         text-align: center;
         justify-content: center;
     }
 
-    /* p {
-        width: 75vw;
-    }
- */
-    table {
+    p {
         font-size: 18px;
-        width: 95vw;
     }
 
+    /* table {
+        font-size: 18px;
+        width: 80vw;
+    } */
+
     .table-container {
-        align-self: flex-end;
-        width: 100%;
         display: none;
     }
 
     .buttons-container {
-        width: 95vw;
-        height: 60vw;
+        width: 85vw;
+        height: 50vw;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: auto auto;
@@ -173,7 +211,20 @@ tr:hover {
     }
 
     svg {
-        width: 95vw;
-        height: 75vw;
+        max-height: 65vw;
+        max-width: 100%;
+    }
+
+    .div-info, .div-mux {
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .selection-menu {
+        flex-direction: column;
+    }
+
+    h4 {
+        font-size: 20px;
     }
 }
