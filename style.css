@@ -9,10 +9,15 @@ body {
     display: flex;
     flex-direction: column;
 
+    background-color: #012243;
     color: #012243;
     text-align: center;
 
     align-items: center;
+}
+
+h1 {
+    color: white;
 }
 
 .container {
@@ -29,8 +34,6 @@ body {
     flex-direction: column;
     gap: 20px;
     justify-content: center;
-
-    background: rgb(235, 10, 119);
 }
 
 /* ----------------------------- */
@@ -170,10 +173,17 @@ footer {
     display: flex;
     flex-direction: column;
 
-    background-color: #3b82f6;
+    background-color: #336ea6;
 }
 
 footer a {
     text-decoration: none;
     font-size: 15px;
+}
+footer a:visited {
+    color: #012243;
+}
+
+footer a:hover {
+    color: white;
 }
