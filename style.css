@@ -187,3 +187,21 @@ footer a:visited {
 footer a:hover {
     color: white;
 }
+
+/* ----------------------------- */
+/* scroll  */
+
+body::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #5E9CC5;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #012243;
+    border-radius: 15px;
+    border: 2px solid #336ea6;
+  }
+  
