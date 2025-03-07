@@ -51,7 +51,7 @@ h1 {
     align-items: center;
     gap: 10px;
 
-    background-color: #5E9CC5;
+    background-color: #d8d8d8;
     border-radius: 10px;
 
     overflow: auto;
@@ -173,7 +173,7 @@ footer {
     display: flex;
     flex-direction: column;
 
-    background-color: #336ea6;
+    background-color: #d8d8d8
 }
 
 footer a {
@@ -185,7 +185,7 @@ footer a:visited {
 }
 
 footer a:hover {
-    color: white;
+    color: #285D7F;
 }
 
 /* ----------------------------- */

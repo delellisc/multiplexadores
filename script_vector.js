@@ -1,8 +1,9 @@
 function toggleElementColor(h4Element) {
     const computedStyle = window.getComputedStyle(h4Element);
-    const isWhite = computedStyle.color === "rgb(255, 255, 255)";
+    // essa propriedade retorna em rgb
+    const isOn = computedStyle.color === "rgb(40, 93, 127)";
 
-    if (isWhite) {
+    if (isOn) {
         h4Element.style.color = "#012243";
     }
     else {
@@ -10,7 +11,7 @@ function toggleElementColor(h4Element) {
             h4.style.color = "#012243";
         });
 
-        h4Element.style.color = "white";
+        h4Element.style.color = "#285D7F";
     }
 }
 
