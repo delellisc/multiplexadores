@@ -95,7 +95,7 @@ Projeto da matéria de Sistemas Digitais para desenvolver um projeto que simule 
 
 A página inicial do projeto funciona como um **menu de seleção** para os diferentes tipos de multiplexadores. Ela apresenta uma explicação introdutória sobre o que é um **multiplexador** e seu uso em sistemas digitais.  
 
-Os **botões** correspondentes a cada tipo de multiplexador servem como links que exibem os conteúdos específicos que estavam ocultos na página, onde cada multiplexador será detalhado com:  
+Os **títulos** correspondentes a cada tipo de multiplexador servem como **botões** que quando clicados, exibem os conteúdos específicos, onde o multiplexador correspondente será detalhado com:  
 - Explicação sobre seu funcionamento  
 - Tabela-verdade  
 - Diagrama interativo  
