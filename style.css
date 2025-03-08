@@ -171,6 +171,8 @@ input {
 footer {
     margin: 0;
     padding: 0;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
 
     width: 100%;
 
