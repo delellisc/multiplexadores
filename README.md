@@ -152,11 +152,11 @@ O **Multiplexador de Oito Entradas** apresenta um **circuito lógico interativo*
   ```bash
   cd multiplexadores
   ```
-### Contribuições
+## Contribuições
 
 Contribuições são bem-vindas! Se você encontrar algum problema ou quiser adicionar novas funcionalidades, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-### Autores
+## Autores
 
 Projeto desenvolvido por: 
 - [Arthur Vinícius](https://github.com/arthurvinice)
