@@ -6,7 +6,7 @@ Projeto da matéria de Sistemas Digitais para desenvolver um projeto que simule 
 
 ## O que é um multiplexador?
 
-- Dispositivo eletrônico que **seleciona** uma entre várias entradas e a direciona para a saída.  
+- Dispositivo eletrônico que seleciona uma entre várias entradas e a direciona para a saída.  
 - Pode operar com sinais **analógicos ou digitais**.  
 - Um MUX com \(2^N\) entradas precisa de **N sinais de seleção** para escolher a saída.  
   - Exemplo:  
@@ -16,7 +16,7 @@ Projeto da matéria de Sistemas Digitais para desenvolver um projeto que simule 
 
 ### Multiplexador de 2 entradas
 
-- Dispositivo que **seleciona** entre **duas entradas** (\(E0\) e \(E1\)) e encaminha uma delas para a saída (\(X\)).  
+- Dispositivo que seleciona entre **duas entradas** (\(E0\) e \(E1\)) e encaminha uma delas para a saída (\(X\)).  
 - Possui **1 sinal de seleção** (\(S\)), que define qual entrada será enviada para a saída.  
 - Funcionamento:
   - Se \(S = 0\), a saída será \(X = E0\).  
@@ -93,7 +93,7 @@ Projeto da matéria de Sistemas Digitais para desenvolver um projeto que simule 
 
 ## Página Inicial do Projeto  
 
-A página inicial do projeto funciona como um **menu de seleção** para os diferentes tipos de multiplexadores. Ela apresenta uma explicação introdutória sobre o que é um **multiplexador** e seu uso em sistemas digitais.  
+A página inicial do projeto funciona como um **menu de seleção** para os diferentes tipos de multiplexadores. Ela apresenta uma explicação introdutória sobre o que é um **multiplexador** e seu uso em sistemas digitais e dá 3 opções de multiplexadores para o usuário clicar.  
 
 Os **títulos** correspondentes a cada tipo de multiplexador servem como **botões** que quando clicados, exibem os conteúdos específicos, onde o multiplexador correspondente será detalhado com:  
 - Explicação sobre seu funcionamento  
