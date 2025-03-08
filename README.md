@@ -141,3 +141,25 @@ O **Multiplexador de Oito Entradas** apresenta um **circuito lógico interativo*
 - O circuito utiliza **portas lógicas AND e OR** para direcionar a saída conforme a combinação dos bits de seleção.
 - O multiplexador possui **três entradas de seleção (S₂, S₁ e S₀)** que determinam **quais das oito entradas de dados (E₀ a E₇) serão transmitidas para a saída Z**.
 - Além disso, há um **sinal de Enable (E')**, que **habilita ou desabilita a saída**.
+
+### Instruções para acessar o código do sistema:
+
+1. Clone o repositório:
+  ```bash
+  git clone  https://github.com/delellisc/multiplexadores.git
+  ```
+2. Acesse para o diretório do repositório:
+  ```bash
+  cd multiplexadores
+  ```
+### Contribuições
+
+Contribuições são bem-vindas! Se você encontrar algum problema ou quiser adicionar novas funcionalidades, sinta-se à vontade para abrir uma issue ou enviar um pull request.
+
+### Autores
+
+Projeto desenvolvido por: 
+- [Arthur Vinícius](https://github.com/arthurvinice)
+- [Camilo de Lellis](https://github.com/delellisc)
+- [David Araujo](https://github.com/debiddos)
+- [Pedro Xavier](https://github.com/pxavier02)
